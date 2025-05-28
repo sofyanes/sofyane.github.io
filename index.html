@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechety Sofyane - Etudiant</title>
+    <link rel="stylesheet" href="styles_full_animated.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="logo">M</div>
+        <nav>
+            <ul>
+                <li><a href="#home">🏠</a></li>
+                <li><a href="#about">👤</a></li>
+                <li><a href="#portfolio">💼</a></li>
+                <li><a href="#contact">✉️</a></li>
+            </ul>
+        </nav>
+        <div class="language-switcher">
+            <a href="#">FR</a> | <a href="#">EN</a>
+        </div>
+    </aside>
+
+    <main>
+        <section id="home" class="home">
+            <h1>Mechety Sofyane</h1>
+            <p> Étudiant en informatique, motivé pour coder demain dès aujourd’hui.</p>
+        </section>
+
+        <section id="about" class="about">
+            <h2>À propos</h2>
+            <div class="profile">
+                <img src="profile.jpg" alt="Mechety Sofyane">
+                <div class="profile-info">
+                <a href="https://www.linkedin.com/in/sofyane-mechety-323166338/" target="_blank" style="color: blue; text-decoration: none; font-weight: bold;">Linkedin</a>
+                    <p>📍 Gournay-sur-Marne, France</p>
+                    <p>En formation BUT informatique (...)</p>
+                    <div class="stats">
+                        <div>1 ère année de BUT<br><small>informatique</small></div>
+                        <div>En constante <br><small>recherche d'alternance</small></div>
+                        <div>Je souhaite devenir un<br><small> ingénieur en informatique</small></div>
+                    </div>
+                    <a href="Sofyane Mechety-1.pdf" class="btn">Télécharger CV</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <h2>Projets & Compétences</h2>
+            <div class="gallery">
+                <div class="projects-grid">
+                    <div class="project-card" onclick="window.location.href='https://github.com/alkzhab/Senior_Meet/commit/0acfd62f2d37e9d54ac255a639f2c3377ee8850e';">
+                        <h3>Senior Meet</h3>
+                        <p class="description">Senior Meet est une application pensée pour lutter contre l'isolement des personnes âgées. Elle facilite les échanges, les rencontres et le partage d’activités entre seniors.</p>
+                        <div class="badges">
+                            <span class="badge html-css">HTML/CSS</span>
+                            <span class="badge php">PHP</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" onclick="window.location.href='https://github.com/sofyanes/portfolio';">
+                        <h3>Cordoue</h3>
+                        <p class="description">Un site de présentation sur la ville de Cordoue, en partenatiat avec l'UNESCO mettant en valeur son riche patrimoine culturel classé au patrimoine mondial de l'UNESCO, notamment la célèbre Mosquée-Cathédrale et le centre historique.</p>
+                        <div class="badges">
+                            <span class="badge html-css">HTML/CSS</span>
+                            <span class="badge php">PHP</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" onclick="window.location.href='https://www.figma.com/design/52wCLAGKErNhg4WQNcPJ2l/Pizza-s?node-id=0-1&p=f&t=XwcNe2anxYeYDPAQ-0';">
+                        <h3>maquette Customizza</h3>
+                        <p class="description">Future application encore en maquettage qui permettra de créer nos pizza en suivant nos désirs de A à Z.</p>
+                        <div class="badges">
+                            <span class="badge java">Java</span>
+                            <span class="badge ihm">IHM</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" onclick="window.location.href='anglais.pdf';">
+                        <h3>The weird festival</h3>
+                        <p class="description">A small task where we used A.I. to create a feature connecting two movies, to create a film festival poster.</p>
+                        <div class="badges">
+                            <span class="badge anglais">anglais</span>
+                            <span class="badge i.a">i.a</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contactez-moi</h2>
+            <form action="mailto:mechetysofyane@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Adresse Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <div class="cookie-banner" id="cookieBanner">
+        <p>Ce site n'utilise pas de cookies, mais les mange.</p>
+        <button id="refuserBtn">Refuser</button>
+        <button id="continuerBtn">Continuer</button>
+    </div>
+
+    <script>
+    const banner = document.getElementById('cookieBanner');
+    function hideBanner() {
+        banner.style.display = 'none';
+    }
+    document.getElementById('refuserBtn').addEventListener('click', hideBanner);
+    document.getElementById('continuerBtn').addEventListener('click', hideBanner);
+    </script>
+
+</body>
+</html>
+
